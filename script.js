@@ -1,3 +1,5 @@
+//SCSHA
+//CHanges 
 const upload = document.getElementById("upload");
 const gallery = document.getElementById("gallery");
 const slideBtn = document.getElementById("slideshowSelected");
