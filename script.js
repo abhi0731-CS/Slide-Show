@@ -144,4 +144,4 @@ jsonInput.onchange = (e) => {
   reader.readAsText(file);
 };
 
-preview.onclick = () => preview.style.display = "none";
+preview.onclick = () => preview.style.display = "none"; 
