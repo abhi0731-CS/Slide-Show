@@ -1,1 +1,1 @@
-Hello this project made by rutik & Abhishekh
+Hello this project made by Rutik & Abhishek
