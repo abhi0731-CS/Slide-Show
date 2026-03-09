@@ -1,38 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Photo Album Builder</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Photo Album Builder</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <h2>Photo Album Builder</h2>
 
-<div id="upload-section">
-  <input type="file" id="upload" multiple accept="image/*">
-  <button id="slideshowSelected">Start Slideshow</button>
+<div id="toolbar">
 
-  <label>
-    Slide Time (sec):
-    <input type="number" id="slideTime" value="5" min="1">
-  </label>
+<div class="movable" id="uploadBox">
+<input type="file" id="upload" multiple accept="image/*">
+</div>
 
-  <button id="loadJsonBtn">Load JSON</button>
-  <input type="file" id="jsonInput" accept=".json" hidden>
+<div class="movable" id="startBox">
+<button id="slideshowSelected">Start Slideshow</button>
+</div>
+
+<div class="movable" id="timeBox">
+<label>
+Slide Time (sec):
+<input type="number" id="slideTime" value="5" min="1">
+</label>
+</div>
+
+<div class="movable" id="loadBox">
+<button id="loadJsonBtn">Load JSON</button>
+</div>
+
+<div class="movable" id="customBox">
+<button id="customizeBtn">Customize UI</button>
+</div>
+
+<input type="file" id="jsonInput" accept=".json" hidden>
+
 </div>
 
 <h3>Gallery (Click to Add)</h3>
 <div id="gallery"></div>
 
-<h3>Slideshow Order (Click to Remove)</h3>
+<h3>Slideshow Order (Drag reorder, Click remove)</h3>
 <div id="slideshowQueue" class="queue"></div>
+
 <button id="clearQueue">Clear Order</button>
 
 <div id="preview">
-  <img id="previewImg">
+<img id="previewImg">
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
